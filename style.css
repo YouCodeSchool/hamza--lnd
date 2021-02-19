@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap%27');
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'popins', sans-serif;
+}
+
+/* -------- style header -------------*/
+
+nav {
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid #000;
+    /* opacity: 50%; */
+}
+
+nav ul {
+    float: right;
+    margin-right: 25px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 16px;
+}
+
+nav ul li a {
+    position: relative;
+    color: rgb(20, 18, 18);
+    font-size: 17px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    padding: 5px 0;
+}
+
+nav ul li a::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: #FFCE33;
+    transform: scale(0);
+    transform-origin: left;
+    transition: transform .4s linear;
+}
+
+nav ul li a:hover:before {
+    transform: scale(1);
+    transform-origin: left;
+    border-radius: 5px;
+}
+
+label #btn, label #cancel {
+    color: rgb(14, 13, 13);
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width:944px) {
+    nav ul li a {
+        font-size: 17px;
+    }
+}
+
+@media (max-width:860px) {
+    label #btn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: -100vh;
+        background-color: #2b3136;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+    #check:checked~label #btn {
+        display: none;
+    }
+    #check:checked~label #cancel {
+        display: block;
+    }
+}
+
+/* -------------reservation */
+form{
+    margin:70px;
+    display: flex;
+     justify-content: center; 
+     
+}
+
+select {
+    font-family: 'Open Sans', sans-serif;
+    padding: 8px 12px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1.2px solid #ebebeb;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 1px 1px #d0d4d9;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 8px;
+}
+input{
+    font-family: 'Open Sans', sans-serif;
+    padding: 4px 12px;
+    outline: none;
+    border-radius: 4px;
+    border: 1.2px solid #ebebeb;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 1px 1px #d0d4d9;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 8px;
+    /* letter-spacing: 5px; */
+}
+
+option {
+    background-color: white !important;
+    color: #000;
+}
+
+select:hover {
+    background-color:#FFCE33;
+    color: rgb(0, 0, 0);
+    border-color: #FFCE33;
+    box-shadow: none;
+}
+
+select:focus {
+    border-radius: 4px 4px 0px 0px;
+}
+.myButton {
+ 
+    background-color:#ffffff;
+    border-radius:4px;
+    border:1px solid #000000;
+    display:flex;
+    justify-content: center;
+    margin: 0 auto;
+    cursor:pointer;
+    color:#000000;
+    font-family:Arial;
+    font-size:20px;
+    padding:15px 20px;
+    
+  
+}
+.myButton:hover {
+    background-color:#FFCE33;
+}
+/* .myButton:active {
+    position:relative;
+    top:1px;
+} */
+
+/* -----------------style de contacts-------------------- */
+
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.container .contactinfo .box .text h3 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #1F2532;
+}
+
+.contact .content p {
+    font-weight: 300%;
+    color: #000;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container .contactinfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contactinfo .box {
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .contactinfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: #FFCE33;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container .contactinfo .box .text {
+    display: flex;
+    margin-left: 30px;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .contactinfo .box .text h2 {
+    font-weight: 500;
+}
+
+.contactform {
+    width: 40%;
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+.contactform h2 {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+.contactform .inputbox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactform .inputbox input, .contactform .inputbox textarea {
+    width: 100%;
+    padding: 5px 0;
+    margin: 10px 0;
+    font-size: 10px;
+    border: none;
+    border-bottom: 2px solid #FFCE33;
+    outline: none;
+    resize: none;
+}
+
+.contactform .inputbox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    margin: 10px 0;
+    font-size: 15px;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contactform .inputbox input:focus~span, .contactform .inputbox textarea:focus~span, .contactform .inputbox input:valid~span, .contactform .inputbox textarea:valid~span {
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactform .inputbox input[type="submit"] {
+    background: #1F2532;
+    color: #d0d4d9;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 19px;
+}
+
+@media (max-width :991px) {
+    .contact {
+        padding: 50px;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .container .contactinfo {
+        margin-bottom: 40px;
+    }
+    .container .contactinfo .contactform {
+        width: 100%;
+    }
+}
+
+/* ----------style gallerie */
+
+.catg {
+    margin: 100px auto;
+    max-width: 1100px;
+}
+
+.catg nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav.items {
+    display: flex;
+    max-width: 720px;
+    width: 100%;
+    justify-content: space-between;
+   
+}
+
+nav .items .item {
+    padding: 7px 25px;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid rgb(128, 124, 124);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+nav .items  .active,
+nav .items .item:hover{
+    background: #FFCE33;
+}
+.gallerie{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.gallerie .image span {
+    display: flex;
+    width: 100%;
+}
+.gallerie .image{
+    padding: 8px;
+   width: calc(100% / 4);
+}
+.gallerie .image.hide{
+   
+    display: none;
+}
+.gallerie .image.show{
+    display: block;
+}
+.gallerie .image img{
+    width: 100%;
+}
+@media (max-width: 1000px){
+    .gallerie .image{
+       width: calc(100% / 3);
+    }
+}
+@media (max-width: 800px){
+    .gallerie .image{
+       width: calc(100% / 2);
+    }
+}
+@media (max-width: 800px){
+    nav.items {
+        max-width: 720px;
+        width: 100%;
+    }
+}

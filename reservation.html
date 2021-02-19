@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reserver.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+</head>
+<style>
+
+</style>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+
+        </label>
+        <ul>
+            <li><a href="acceuil.html">Acceuil</a></li>
+            <li><a href="gallerie.html">Gallerie</a></li>
+            <li><a href="reservation.html">reservation</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+    </nav>
+    <!-- ---------------- -->
+    <div class="parag">
+        <p> Reserve your car </p>
+    </div>
+    <form name="formulaire">
+        <select name="vehicule" id="type" onchange="list()">
+            <option value="">SELECTIONNER UN VEHICUL</option>
+            <option value="moto">MOTO</option>
+            <option value="compact">COMPACT</option>
+            <option value="citadin">CITADIN</option>
+            <option value="utilitaire">UTILITAIRE</option>
+            <option value="berlin">BERLIN</option>
+            <option value="camion">CAMION</option>
+            <option value="engindechantier">ENGIN DE CHANTIER</option>
+        </select>
+        <select name="carburant">
+            <option value="">SELECTIONNER UN carburant</option>
+            <option>
+            <option>
+            <option>
+            <option>
+        </select>
+        <select name="boitevitesse">
+            <option value="">SELECTIONNER le genre de boite a vitesse</option>
+            <option>
+        </select>
+        <input class="day" type="text" placeholder="combien des jours">
+
+    </form>
+    <button type="button" class="myButton">RESERVER</button>
+    <footer id="footer">
+        <div class="footer-w">
+            <div class="s-icons">
+                <!--HEADING-->
+                <!--SOCIAL ICONS-->
+                <div class="s-box">
+                    <!--ICON FOR FACEBOOK-->
+                    <span><i class="fab fa-facebook-f"></i></span>
+                    <!--ICON FOR TWITTER-->
+                    <span><i class="fab fa-twitter"></i></span>
+                    <!--ICON FOR INSTAGRAM-->
+                    <span><i class="fab fa-instagram"></i></span>
+                    <!--ICON FOR YOUTUBE-->
+                    <span><i class="fab fa-youtube"></i></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="reserver.js"> </script>
+    
+
+</body>
+
+</html>
