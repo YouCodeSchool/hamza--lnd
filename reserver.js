@@ -107,25 +107,25 @@ document.querySelector("button").addEventListener('click', () => {
     // document.querySelector("#customers > tbody > tr:nth-child(2) > td:nth-child(5)").textContent = price;
 
     Swal.fire({
-        title: 'Success',
+        // title: 'Success',
         text: 'Price : ' + price + ' $',
-        icon: 'success',
+        // icon: 'success',
         confirmButtonText: 'Ok'
     })
 });
 
 function list() {
 
-    for (j = 1; j < 5; j++) {
-        formulaire.carburant.options[j].text = "";
-    }
+    // for (j = 1; j < 5; j++) {
+    //     formulaire.carburant.options[j].text = "";
+    // }
 
-    formulaire.carburant.options[0].text = 'SELECTIONNER UN carburant';
+    // formulaire.carburant.options[0].text = 'SELECTIONNER UN carburant';
 
     var i = formulaire.vehicule.selectedIndex;
 
 
-
+    
     if (i == 0) {
         for (j = 1; j < 7; j++) {
             formulaire.carburant.options[j].text = "";

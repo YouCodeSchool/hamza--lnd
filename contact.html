@@ -5,17 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acceuil</title>
+    <title>contact</title>
     <link rel="stylesheet" href="contacts.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
 
 </head>
 
 <body>
     <nav>
+        <img class="logoCar" src="image/logoCarRent.svg" alt="logo">
+
         <input type="checkbox" id="check">
         <label for="check">
             <i class="fas fa-bars" id="btn"></i>
@@ -29,10 +32,9 @@
     </nav>
     <section class="contact">
         <div class="content">
-            <h2>Contact us </h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam incidunt, omnis, aspernatur debitis sequi
-                tempora magni molestias cupiditate, quia tenetur ducimus beatae reiciendis! Enim temporibus repellendus
-                porro cupiditate adipisci maxime.</p>
+            <h2 class="titles">Contact us </h2>
+            <p>if you are intrested or have any question, send us a message
+                .</p>
         </div>
         <div class="container">
             <div class="contactinfo">
@@ -40,73 +42,101 @@
                     <div class="icon">
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
-                        <div class="text">
-                            <h3>Address</h3>
-                            <p>1234 RUE ........ QU....... <br>safi <br>46000</p>
-                        </div> 
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>1234 RUE ........ QU....... <br>safi <br>46000</p>
+                    </div>
                 </div>
                 <div class="box">
                     <div class="icon">
-                        <i class="fas fa-phone-alt"></i></div>
-                        <div class="text">
-                            <h3>Phone</h3>
-                            <p>0612000000</p>
-                        </div>
-                    
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>0612000000</p>
+                    </div>
+
                 </div>
                 <div class="box">
                     <div class="icon">
                         <i class="far fa-envelope"></i>
                     </div>
                     <div class="text">
-                            <h3>Email</h3>
-                            <p>email@gmail.com</p>
-                    </div>  
+                        <h3>Email</h3>
+                        <p>email@gmail.com</p>
+                    </div>
                 </div>
             </div>
-        
-        <div class="contactform">
-            <form action="">
-                <h2>Send Message</h2>
-                <div class="inputbox">
-                    <input type="text " required="required">
-                    <span>Full Name</span>
-                </div>
-                <div class="inputbox">
-                    <input type="text " required="required">
-                    <span>Email</span>
-                </div>
-                <div class="inputbox">
-                    <textarea required cols="30" rows="10"></textarea>
-                    <span>Type your message ....</span>
-                </div>
-                <div class="inputbox">
-                    <input type="submit" value="send" >
-                </div>
-            </form>
-        </div>
-    
-    </section>
-    <footer id="footer">
+
+            <div class="contactform">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="inputbox">
+                        <input type="text " required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text " required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputbox">
+                        <textarea required cols="30" rows="10"></textarea>
+                        <span>Type your message ....</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="submit" value="send">
+                    </div>
+                </form>
+            </div>
+
+    </section>    <footer id="footer">
         <div class="footer-w">
+            <div class="quickLinks">
+                <h2>Quick links</h2>
+                <ul>
+                    <li><a href="acceuil.html">Acceuil</a></li>
+                    <li><a href="gallerie.html">Gallerie</a></li>
+                    <li><a href="reservation.html">reservation</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </div>
+            <div class="firstFooter">
+                <h2>About the company</h2>
+                <p>Welcome to Car Rental Safi . Rent a car online now from one of our worldwide locations. With over 90
+                    years’ experience in car and van rentals, take advantage of our large vehicle rental selection and
+                    make your booking online instantly.</p>
+            </div>
+            <img class="logoFooter" src="image/RentCars_Logo.png" alt="logo">
             <div class="s-icons">
                 <!--HEADING-->
                 <!--SOCIAL ICONS-->
                 <div class="s-box">
                     <!--ICON FOR FACEBOOK-->
-                    <span><i class="fab fa-facebook-f"></i></span>
+                    <div><i class="fab fa-facebook-f"></i>
+                    
+                    </div>
                     <!--ICON FOR TWITTER-->
-                    <span><i class="fab fa-twitter"></i></span>
+                    <div><i class="fab fa-twitter"></i>
+                     
+                    </div>
                     <!--ICON FOR INSTAGRAM-->
-                    <span><i class="fab fa-instagram"></i></span>
+                    <div><i class="fab fa-instagram"></i>
+                        
+                    </div>
                     <!--ICON FOR YOUTUBE-->
-                    <span><i class="fab fa-youtube"></i></span>
+                    <div><i class="fab fa-youtube"></i>
+                        
+                    </div>
                 </div>
             </div>
+            <!-- <p>all rights are reserved</p> -->
         </div>
+        <!-- <p>all rights are reserved</p> -->
     </footer>
+    <script src="contact.js"> </script>
 
 
 
 </body>
+
 </html>

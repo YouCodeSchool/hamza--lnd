@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>reservation</title>
     <link rel="stylesheet" href="reserver.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -19,6 +19,8 @@
 
 <body>
     <nav>
+        <img class="logoCar" src="image/logoCarRent.svg" alt="logo">
+
         <input type="checkbox" id="check">
         <label for="check">
             <i class="fas fa-bars" id="btn"></i>
@@ -34,11 +36,11 @@
     </nav>
     <!-- ---------------- -->
     <div class="parag">
-        <p> Reserve your car </p>
+        <p class="titles" > Reserve your car </p>
     </div>
     <form name="formulaire">
         <select name="vehicule" id="type" onchange="list()">
-            <option value="">SELECTIONNER UN VEHICUL</option>
+            <option value="" disabled selected> VEHICUL</option>
             <option value="moto">MOTO</option>
             <option value="compact">COMPACT</option>
             <option value="citadin">CITADIN</option>
@@ -48,14 +50,14 @@
             <option value="engindechantier">ENGIN DE CHANTIER</option>
         </select>
         <select name="carburant">
-            <option value="">SELECTIONNER UN carburant</option>
+            <option value="" disabled selected>CARBURANT</option>
             <option>
             <option>
             <option>
             <option>
         </select>
         <select name="boitevitesse">
-            <option value="">SELECTIONNER le genre de boite a vitesse</option>
+            <option value="" disabled selected> BOITE A VITESSE</option>
             <option>
         </select>
         <input class="day" type="text" placeholder="combien des jours">
@@ -64,21 +66,47 @@
     <button type="button" class="myButton">RESERVER</button>
     <footer id="footer">
         <div class="footer-w">
+            <div class="quickLinks">
+                <h2>Quick links</h2>
+                <ul>
+                    <li><a href="acceuil.html">Acceuil</a></li>
+                    <li><a href="gallerie.html">Gallerie</a></li>
+                    <li><a href="reservation.html">reservation</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </div>
+            <div class="firstFooter">
+                <h2>About the company</h2>
+                <p>Welcome to Car Rental Safi . Rent a car online now from one of our worldwide locations. With over 90
+                    years’ experience in car and van rentals, take advantage of our large vehicle rental selection and
+                    make your booking online instantly.</p>
+            </div>
+            <img class="logoFooter" src="image/RentCars_Logo.png" alt="logo">
             <div class="s-icons">
                 <!--HEADING-->
                 <!--SOCIAL ICONS-->
                 <div class="s-box">
                     <!--ICON FOR FACEBOOK-->
-                    <span><i class="fab fa-facebook-f"></i></span>
+                    <div><i class="fab fa-facebook-f"></i>
+                    
+                    </div>
                     <!--ICON FOR TWITTER-->
-                    <span><i class="fab fa-twitter"></i></span>
+                    <div><i class="fab fa-twitter"></i>
+                     
+                    </div>
                     <!--ICON FOR INSTAGRAM-->
-                    <span><i class="fab fa-instagram"></i></span>
+                    <div><i class="fab fa-instagram"></i>
+                        
+                    </div>
                     <!--ICON FOR YOUTUBE-->
-                    <span><i class="fab fa-youtube"></i></span>
+                    <div><i class="fab fa-youtube"></i>
+                        
+                    </div>
                 </div>
             </div>
+            <!-- <p>all rights are reserved</p> -->
         </div>
+        <!-- <p>all rights are reserved</p> -->
     </footer>
     
 

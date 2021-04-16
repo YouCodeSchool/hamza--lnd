@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acceuil</title>
+    <title>gallerie</title>
     <link rel="stylesheet" href="gallerie.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,6 +13,7 @@
 </head>
 <body>
     <nav>
+        <img class="logoCar" src="image/logoCarRent.svg" alt="logo">
         <input type="checkbox" id="check"> 
         <label for="check">
             <i class="fas fa-bars" id="btn"></i>
@@ -27,7 +28,9 @@
         </ul>
     </nav>
     <div class="catg">
-        <nav>
+        <h1 class="titles" >Our catalogue</h1>
+        <section>
+            
             <div class="items">
                 <span class="item active" data-name="all">ALL</span>
                 <span class="item" data-name="moto">MOTO</span>
@@ -38,39 +41,71 @@
                 <span class="item" data-name="camion" >CAMION</span>
                 <span class="item" data-name="chantier"> CHANTIER</span>
             </div>
-        </nav>
+        </section>
         <div class="gallerie">
-            <div class="image" data-name="moto"><span><img src="C:\Users\admin\Desktop\breif3\image\moto1.jpg" alt=""></span></div>
-            <div class="image"data-name="moto"><span><img src="C:\Users\admin\Desktop\breif3\image\moto2.jpg" alt=""></span></div>
-            <div class="image"data-name="moto"><span><img src="C:\Users\admin\Desktop\breif3\image\moto3.jpg" alt=""></span></div>
-            <div class="image"data-name="citadine"><span><img src="C:\Users\admin\Desktop\breif3\image\citadin1.jpg" alt=""></span></div>
-            <div class="image"data-name="citadine"><span><img src="C:\Users\admin\Desktop\breif3\image\citadin2.jpg" alt=""></span></div>
-            <div class="image"data-name="citadine"><span><img src="C:\Users\admin\Desktop\breif3\image\citadin3.jpg" alt=""></span></div>
-            <div class="image"data-name="camion"><span><img src="C:\Users\admin\Desktop\breif3\image\camion1.png" alt=""></span></div>
-            <div class="image"data-name="camion"><span><img src="C:\Users\admin\Desktop\breif3\image\camion2.jpg" alt=""></span></div>
-            <div class="image"data-name="chantier"><span><img src="C:\Users\admin\Desktop\breif3\image\chantie1.jpg" alt=""></span></div>
-            <div class="image"data-name="chantier"><span><img src="C:\Users\admin\Desktop\breif3\image\chantie2.jpg" alt=""></span></div>
+            <div class="image" data-name="moto"><span><img src="image\moto1.jpg" alt=""></span></div>
+            <div class="image"data-name="moto"><span><img src="image\moto2.jpg" alt=""></span></div>
+            <div class="image"data-name="moto"><span><img src="image\moto3.jpg" alt=""></span></div>
+            <div class="image"data-name="citadine"><span><img src="image\citadin1.jpg" alt=""></span></div>
+            <div class="image"data-name="citadine"><span><img src="image\citadin2.jpg" alt=""></span></div>
+            <div class="image"data-name="citadine"><span><img src="image\citadin3.jpg" alt=""></span></div>
+            <div class="image"data-name="camion"><span><img src="image\camion1.png" alt=""></span></div>
+            <div class="image"data-name="camion"><span><img src="image\camion2.jpg" alt=""></span></div>
+            <div class="image"data-name="chantier"><span><img src="image\chantie1.jpg" alt=""></span></div>
+            <div class="image"data-name="chantier"><span><img src="image\chantie2.jpg" alt=""></span></div>
+            <div class="image"data-name="utilitaire"><span><img src="image\utilitaire-1.jpg" alt=""></span></div>
+            <div class="image"data-name="utilitaire"><span><img src="image\utilitaire-2.png" alt=""></span></div>
+            <div class="image"data-name="compact"><span><img src="image\compact1.jpg" alt=""></span></div>
+            <div class="image"data-name="compact"><span><img src="image\compact2.jpg" alt=""></span></div>
+            <div class="image"data-name="berlin"><span><img src="image\berline-1.jpg" alt=""></span></div>
+            <div class="image"data-name="berlin"><span><img src="image\berline-2.jpg" alt=""></span></div>
         </div>
 
 
     </div>
     <footer id="footer">
         <div class="footer-w">
+            <div class="quickLinks">
+                <h2>Quick links</h2>
+                <ul>
+                    <li><a href="acceuil.html">Acceuil</a></li>
+                    <li><a href="gallerie.html">Gallerie</a></li>
+                    <li><a href="reservation.html">reservation</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </div>
+            <div class="firstFooter">
+                <h2>About the company</h2>
+                <p>Welcome to Car Rental Safi . Rent a car online now from one of our worldwide locations. With over 90
+                    years’ experience in car and van rentals, take advantage of our large vehicle rental selection and
+                    make your booking online instantly.</p>
+            </div>
+            <img class="logoFooter" src="image/RentCars_Logo.png" alt="logo">
             <div class="s-icons">
                 <!--HEADING-->
                 <!--SOCIAL ICONS-->
                 <div class="s-box">
                     <!--ICON FOR FACEBOOK-->
-                    <span><i class="fab fa-facebook-f"></i></span>
+                    <div><i class="fab fa-facebook-f"></i>
+                    
+                    </div>
                     <!--ICON FOR TWITTER-->
-                    <span><i class="fab fa-twitter"></i></span>
+                    <div><i class="fab fa-twitter"></i>
+                     
+                    </div>
                     <!--ICON FOR INSTAGRAM-->
-                    <span><i class="fab fa-instagram"></i></span>
+                    <div><i class="fab fa-instagram"></i>
+                        
+                    </div>
                     <!--ICON FOR YOUTUBE-->
-                    <span><i class="fab fa-youtube"></i></span>
+                    <div><i class="fab fa-youtube"></i>
+                        
+                    </div>
                 </div>
             </div>
+            <!-- <p>all rights are reserved</p> -->
         </div>
+        <!-- <p>all rights are reserved</p> -->
     </footer>
     <script src="gallery.js"></script>
 
